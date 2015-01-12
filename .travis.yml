@@ -4,7 +4,7 @@ python:
   - "3.3"
 before_install:
   - sudo apt-get update -qq
-  - gcc libffi-dev libldap2-dev libsasl2-dev libssl-dev python-dev
+  - sudo apt-get install gcc libffi-dev libldap2-dev libsasl2-dev libssl-dev python-dev
 install:
   # Build/test dependencies
   - python setup.py install
